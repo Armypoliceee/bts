@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thought for You Today</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f3e6ff; /* Light purple background */
+            color: #4b2e83; /* Dark purple text color */
+            text-align: center;
+            padding: 50px 10px;
+        }
+        .container {
+            background-color: #ffffff; /* White background for the text box */
+            border-radius: 15px;
+            padding: 30px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            margin: auto;
+        }
+        .bts-image {
+            margin-top: 30px;
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .thought-text {
+            font-size: 1.5em;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .footer {
+            font-size: 0.9em;
+            color: #7d4c9c;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="thought-text" id="thoughtText">Loading thought...</div>
+</div>
+
+<div class="footer">
+    <p>Powered by ARMY Police 💜</p>
+</div>
+
+<script>
+    const thoughts = [
+        "You’re doing better than you think. Keep going.",
+        "The only time you should look back is to see how far you've come.",
+        "You don’t have to be perfect, just real. That’s enough.",
+        "Even in the darkest night, the moon still shines. So can you.",
+        "You are your own answer. Believe in yourself.",
+        "Every step you take is a step forward—even the tiny ones.",
+        "Don’t rush your growth. Flowers bloom at their own time.",
+        "It’s okay to rest. The stars don’t shine all day.",
+        "You are loved, even when you don’t feel it.",
+        "Let your heart speak louder than your fears.",
+        "Dream big, like you’re already on stage with BTS.",
+        "You’re allowed to outgrow the version of yourself you used to be.",
+        "Magic exists—you’re living proof of it.",
+        "The universe is rooting for you. So am I.",
+        "You matter. Your story matters. Don’t stop writing it.",
+        "Love yourself fiercely. That’s what BTS taught us.",
+        "It’s okay to be soft in a world that tries to make you hard.",
+        "Healing takes time. So take all the time you need.",
+        "You are not alone. There’s always an ARMY somewhere who understands.",
+        "You’ve survived 100% of your worst days. That’s power.",
+        "Some days you’ll glow. Some days you’ll flicker. You’re still a light.",
+        "Trust your journey, even if you don’t understand it yet.",
+        "You’re allowed to be a masterpiece and a work in progress at the same time.",
+        "There’s something beautiful about how you keep trying.",
+        "If you’re breathing, you’re already winning.",
+        "Your worth isn’t measured by productivity. Just by being you.",
+        "The dream is still alive. Keep walking toward it.",
+        "You are stardust, resilience, and quiet strength.",
+        "You’re not behind. You’re on your own timeline.",
+        "Even the tiniest act of love counts. Start with yourself."
+    ];
+
+    // Select a random thought from the array
+    const randomThought = thoughts[Math.floor(Math.random() * thoughts.length)];
+
+    // Display the thought
+    document.getElementById('thoughtText').textContent = randomThought;
+</script>
+
+</body>
+</html>
